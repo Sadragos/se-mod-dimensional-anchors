@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A6CBB2B-2088-40E4-A193-00CB1CDEFB67}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Dimensional_Anchors</RootNamespace>
+    <AssemblyName>Dimensional Anchors</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Data\BlockVariantGroups.sbc" />
+    <None Include="Data\BlueprintClasses.sbc" />
+    <None Include="Data\Blueprints.sbc" />
+    <None Include="Data\Components.sbc" />
+    <None Include="Data\CubeBlocks.sbc" />
+    <None Include="modinfo.sbmi" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Scripts\AmmoGenerator.cs" />
+    <Compile Include="Data\Scripts\ConsumableGenerator.cs" />
+    <Compile Include="Data\Scripts\IceGenerator.cs" />
+    <Compile Include="Data\Scripts\OreGenerator.cs" />
+    <Compile Include="Data\Scripts\StoneGenerator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="metadata.mod" />
+    <Content Include="Textures\AmmoGenerator.dds" />
+    <Content Include="Textures\IceGenerator.dds" />
+    <Content Include="Textures\KitGenerator.dds" />
+    <Content Include="Textures\OreGenerator.dds" />
+    <Content Include="Textures\StabilizedCore.dds" />
+    <Content Include="Textures\StoneGenerator.dds" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

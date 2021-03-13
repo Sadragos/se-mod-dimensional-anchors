@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlockVariantGroups>
+
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="AnchorGroup" />
+            <Icon>Textures\LootGenerator.dds</Icon>
+            <DisplayName>Dimensional Stone Anchor</DisplayName>
+            <Description>Pulls Stone from another Dimension. ATTENTION: Stabilized Cores become unstable once placed and cannot be retrieved back.</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_CargoContainer" Subtype="StoneGenerator" />
+                <Block Type="MyObjectBuilder_CargoContainer" Subtype="IceGenerator" />
+                <Block Type="MyObjectBuilder_CargoContainer" Subtype="ConsumableGenerator" />
+                <Block Type="MyObjectBuilder_CargoContainer" Subtype="AmmoGenerator" />
+                <Block Type="MyObjectBuilder_CargoContainer" Subtype="OreGenerator" />
+            </Blocks>
+        </BlockVariantGroup>
+
+    </BlockVariantGroups>
+</Definitions>

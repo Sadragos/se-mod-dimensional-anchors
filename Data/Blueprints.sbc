@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MatterToStabilizedCore</SubtypeId>
+      </Id>
+      <DisplayName>Stabilized Core</DisplayName>
+      <Icon>Textures\StabilizedCore.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1500" TypeId="Ingot" SubtypeId="UnstableMatter" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="StabilizedCore" />
+      <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+    </Blueprint>
+  </Blueprints>
+</Definitions>
